@@ -30,3 +30,7 @@ const hogehoge = async () => {
 ## Promise.all(配列)
 - 配列内にあるすべてのfetchが完了するまで待つ
 - async-awaitが必要
+
+# 1005
+## 
+- 
