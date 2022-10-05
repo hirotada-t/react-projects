@@ -38,3 +38,7 @@ const hogehoge = async () => {
 - grid-template-columns: 1fr 1fr 1fr; /* カラム幅の割合 */
 - place-items:center; /* カラムの中央揃え */
 - gap:20px; /* カラムの間隔 */
+
+## Reactのテンプレ呼び出しコマンド
+- rfce
+- import/function/exportを作成
