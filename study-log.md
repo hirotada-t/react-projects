@@ -30,3 +30,15 @@ const hogehoge = async () => {
 ## Promise.all(配列)
 - 配列内にあるすべてのfetchが完了するまで待つ
 - async-awaitが必要
+
+# 1005
+## (CSS)グリッドデザイン
+(3分割の場合)
+- display:grid; /* グリッドデザインの指定 */
+- grid-template-columns: 1fr 1fr 1fr; /* カラム幅の割合 */
+- place-items:center; /* カラムの中央揃え */
+- gap:20px; /* カラムの間隔 */
+
+## Reactのテンプレ呼び出しコマンド
+- rfce
+- import/function/exportを作成
