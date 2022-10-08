@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css'
 
-const Card = ({pokemon}) => {
+const Card = ({pokemon,keyz}) => {
   return (
     <div className='card'>
       <div className="cardImg">
@@ -12,7 +12,7 @@ const Card = ({pokemon}) => {
         <div>タイプ</div>
         {pokemon.types.map((type)=>{
           return (
-            <div>
+            <div key={type.type.name}>
               <span className='typeName'>{type.type.name}</span>
             </div>
           )
