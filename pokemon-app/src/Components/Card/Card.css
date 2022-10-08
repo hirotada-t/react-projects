@@ -1,8 +1,10 @@
 .card {
-  width: 290px;
+  width: 250px;
+  min-height: 350px;
   box-shadow: 2px 8px 21px -2px #777;
   border-radius: 10px;
   background-color: #eee;
+  border: #777 5px solid;
 }
 
 .cardName {

@@ -43,6 +43,7 @@ function App() {
     setLoading(false);
   };
   const handleNextPage = async () => {
+    if (!nextUrl) return;
     setLoading(true);
     let nextRes = await getAllPokemon(nextUrl);
     await loadPokemon(nextRes.results);
@@ -56,7 +57,7 @@ function App() {
       <Navbavr />
       <div className="App">
         {loading ? (
-          <h1>ロード中・・・</h1>
+          <h1>Now Loading・・・</h1>
         ) : (
           <>
             <div className="pokemonCardContainer">
