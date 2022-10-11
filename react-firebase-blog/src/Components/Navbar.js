@@ -1,13 +1,17 @@
 import React from 'react'
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import "./Navbar.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouse, faFilePen, faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons'
 
-function Navbar() {
+function Navbar({ isAuth }) {
   return (
     <nav>
-      <Link to="/">ホーム</Link>
-      <Link to="/createpost">記事投稿</Link>
-      <Link to="/login">ログイン</Link>
+      <Link to="/"><FontAwesomeIcon icon={faHouse} />ホーム</Link>
+      <Link to="/createpost"><FontAwesomeIcon icon={faFilePen} />記事投稿</Link>
+      {!isAuth
+      ? <Link to="/login"><FontAwesomeIcon icon={faArrowRightToBracket} />ログイン</Link>
+      : <Link to="/logout"><FontAwesomeIcon icon={faArrowRightToBracket} />ログアウト</Link>}
     </nav>
   )
 }
